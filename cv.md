@@ -15,6 +15,7 @@ _________________________________________
 >>- Linus Torvalds
 *******************************************
 # Skills and Proficiency:
+
 * HTML5, CSS3
 * JavaScript Basics
 * Git, GitHub
@@ -51,3 +52,4 @@ function createPhoneNumber(numbers){
 *********************************************
 # Work experience:
 [https://github.com/lirikirilik?tab=repositories]
+***********************************************
