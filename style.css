@@ -1,1 +1,254 @@
-.div {color: blue;}
+
+@font-face {
+    font-family: 'Cormorant-Bold';
+    src: url('../assets/fonts/Cormorant-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Cormorant-Regular';
+    src: url('../assets/fonts/Cormorant-Regular.ttf');
+  }
+ 
+  body {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0px 0 0px;
+    font: 20px/1,5 sans-serif;
+    background-color: #f3f3f3;
+    border: 1px solid  #36393d
+
+  }
+  
+  figure {
+    margin: 50px 0 0;
+  }
+  
+  figcaption {
+    font-size: 12px;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffff;
+    background-color:#36393d;
+    font: 30px/1.5 Cormorant-Bold, sans-serif;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+  }
+ 
+  .container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .section-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 36px;
+    padding-left: 60px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  
+  /* Smoothness */
+  .nav a,
+  .projects__title,
+  .projects__title:after,
+  .projects__item:hover .projects__image {
+    transition: all 0.3s ease 0s;
+  }
+  
+  
+  /* Header */
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #e6e6e6;
+  }
+  
+  .navi {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(165, 159, 159)
+  }
+  .nav a {
+    padding: 14px 10px;
+    line-height: 50px;
+    color: black;
+  }
+  .nav a:hover {
+    background-color: #f5dd06;
+    font-weight: bold;
+  }
+  .nav a:active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Left side */
+  .left-side {
+    width: 100%;
+    color: white;
+    background-color: #36393d;
+  }
+  .figure--left-side {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: min-content;
+    background-color: #36393d;
+  }
+  .photo {
+    width: 100%;
+    object-fit: cover;
+  }
+  .left-side .section-title {
+    background-color: #36393d;
+  } 
+  
+  /* Contact */
+  .contact {
+    padding: 5px 0px 0px 0px;
+    background-color: #36393d;
+  }
+  .contact__list {
+    list-style: none;
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+  }
+  .contact__item {
+    margin-bottom: 15px;
+  }
+  .contact__item:last-child {
+    margin-bottom: 0;
+  }
+  .contact__item a {
+    display: block;
+  }
+  
+  /* Education */
+  .education {
+    padding: 20px 0px 0px 0px;
+  }
+  .education__list {
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+  }
+  .education__item {
+    margin-bottom: 0px;
+  }
+  .education__item:last-child {
+    margin-bottom: px;
+  }
+  
+  /* Right Side */
+  .right-side {
+    background-color: #cbd2db2a;
+  }
+  
+  .section-title {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .figure--right-side {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: min-content;
+  }
+  .page-title {
+    margin: 80px 0px 80px 60px;
+  }
+  .main-title {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+  }
+  .page-title p {
+    font-size: 20px;
+  }
+  
+  /* About me */
+  .about-me {
+    padding: 0;
+    margin-bottom: 54px;
+  }
+  .about-me p {
+    margin: 0 60px 0 60px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  /* Skills */ 
+  .skills {
+    margin-bottom: 54px;
+  }
+  .skills__list {
+    margin: 0px 60px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  
+  /* Code example */
+  .code-example {
+    padding-top: 40px;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .code-example pre {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 14px;
+  }
+ 
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    color: white;
+    background-color: #36393d;
+  }
+  .footer__github {
+    position: relative;
+    padding-left: 20px;
+    color: white;
+    background-image:"./src/GitHub_Logo_White.png";
+    background-position: 0 0;
+  }
+
+  .footer__year {
+    justify-self: center;
+    font-weight: 700;
+  }
+  .footer__rsschool {
+    justify-self: end;
+    height: 32px;
+  }
+
+  .padding {
+    padding: 0 0 0 30px;
+  }
