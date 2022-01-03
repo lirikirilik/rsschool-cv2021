@@ -1,6 +1,6 @@
 ### CV (сurriculum vitae)
 # **Kirill Kuleuski**                              
-![Foto:](/rsschool-cv/src/IMG_1.jpg "Foto")
+![Foto:](./src/Kuleuski.png "Foto")
 *****************************************
 ## Junior Frontend Developer
 _________________________________________
