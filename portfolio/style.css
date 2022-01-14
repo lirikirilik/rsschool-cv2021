@@ -23,13 +23,14 @@ body {
 }
 
 .header-container {
-    position: fixed;
-    top: 5px;
+    position: sticky;
+    top: 0px;
     width: 1440px;
     height: 90px;
     background-image: url('./assets/img/bg.jpg');
     background-position: center 0;
     background-repeat: no-repeat;
+    z-index: 3;
 }
 
 
