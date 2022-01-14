@@ -1,1 +1,1 @@
-# rsschool-cv
+https://lirikirilik.github.io/rsschool-cv/
