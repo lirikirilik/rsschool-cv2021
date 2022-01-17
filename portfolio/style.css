@@ -13,7 +13,12 @@
      src: url("assets/fonts/static/Inter-Bold.ttf");
    }
 
+   html {
+    scroll-behavior: smooth;
+    
+  }
    
+
 body {
     width: 1440px;
     height: 5532px;
@@ -98,17 +103,20 @@ body {
   .header_link:hover {
     background-color: #f5dd06;
     color: green;
+    transition: 3s;
 
     
   }
   .header_link:active {
     color: red;
     text-decoration: none;
+    transition: 3s;
   }
 
   .header_link:focus {
     color: #BDAE82;
     text-decoration: underline;
+    transition: 3s;
   }
 
 .header_logo_link {
@@ -122,6 +130,7 @@ body {
 .header_logo_link:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+    transition: 3s;
 }
 
 
@@ -133,23 +142,28 @@ body {
 .header_link_button:hover {
     background-color: #f5dd06;
     color: green;
+    transition: 3s;
     
   }
   .header_link_button:active {
     color: red;
     text-decoration: none;
+    transition: 3s;
   }
 
   .header_link_button:focus {
     color: #BDAE82;
+    transition: 3s;
   }
 
 .header_link_lang{
   color: #ffff;
-  text-decoration: none;  
+  text-decoration: none;
+  transition: 3s;  
 }
 .header_link_lang:focus{
   color: #BDAE82;
+  transition: 3s;
 }
 
 .en {
@@ -226,10 +240,12 @@ body {
 
 .button:hover {
     background-color: #e0d03adf;
+    transition: 3s;
   }
 .button:active {
     color: red;
     text-decoration: underline;
+    transition: 3s;
 }
 
   .section_Skills {
@@ -423,15 +439,18 @@ color: #FFFFFF;
 .portfolio-button:hover {
     background: #BDAE82;
     color: #726e6e;
+    transition: 3s;
   }
 .portfolio-button:active {
     color: red;
     text-decoration: underline;
+    transition: 3s;
 }
 
 .portfolio-button:focus {
   color:black;
   background-color: #BDAE82;
+  transition: 3s;
 }
 
 
@@ -642,10 +661,12 @@ color: #FFFFFF;
 
 .button-price:hover {
   background-color: #e0d03adf;
+  transition: 3s;
 }
 .button-price:active {
   color: red;
   text-decoration: underline;
+  transition: 3s;
 }
 
 
@@ -763,6 +784,7 @@ color: #FFFFFF;
 .footer__github:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
+  transition: 3s;
 }
 
 .footer__rsschool {
@@ -786,6 +808,7 @@ color: #FFFFFF;
 .footer__rsschool:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
+  transition: 3s;
 }
 
 .social_list{
@@ -807,4 +830,5 @@ color: #FFFFFF;
 .social_logo_link:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
   contrast(87%);
+  transition: 3s;
 }
