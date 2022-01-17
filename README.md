@@ -1,2 +1,2 @@
-# rsschool-cv
-https://github.com/lirikirilik/rsschool-cv
+#portfolio
+https://lirikirilik.github.io/rsschool-cv/
