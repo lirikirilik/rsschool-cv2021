@@ -1,0 +1,229 @@
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+    body {
+        max-width: 768px;
+        margin:0;
+        /* border: 1px solid #ffff; */
+    }
+
+  
+    body.noscroll {
+        overflow: hidden;
+      }
+
+
+    .header-container {
+        max-width: 768px;
+        overflow-x: none;
+        padding: 0;
+        background-image: url('./assets/svg/smallBg798.png');
+
+    }
+
+
+    .header_logo_link {
+        left : 60px;
+        top: 20px;
+    }
+
+    .header_wrapper {
+        margin-left: 71%;
+        padding: 20px 0px;
+        margin-top: 0px;
+        
+        
+    }
+
+    nav {
+        display: none;
+    }
+
+
+ .znak {
+    margin: 0px 14px 0px 5px;
+  }
+    
+
+    .hamb {
+    display: flex;
+    align-items: center;
+    padding:0px 5px;
+    margin: 0px;
+    }
+
+  
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+    
+  }
+  .bar {
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+    
+  }
+  .popup {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 650px;
+    height: 1024px;
+
+    
+    background-color: #000;
+    z-index: 10;
+    display: flex;
+    transition: 0.3s;
+  }
+  .popup.open {
+    left: 127px;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+  .popup .menu > li {
+    width: 100%;
+  }
+  .popup .menu > li > a {
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-family: Inter, "Helvetica Neue", Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34.8235px;
+    line-height: 73px;
+    /* identical to box height, or 208% */
+    
+    
+    color: #FFFFFF;
+  }
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    position: absolute;
+    z-index: 3000;
+   
+  }
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    position: absolute;
+    z-index: 3000;
+
+  }
+
+  .section_Hero{
+    background-image: url('./assets/svg/smallBg798.png');
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    max-width: 768px;
+    max-height: 590px;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+
+    .hero {
+    width: 390px;
+    padding: 80px 0px 60px 0px;
+    margin-left: 60px;
+    }
+
+  .hero_title {
+    font-family: Merriweather, 'Franklin Gothic Medium', 'Arial Narrow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 64px;
+    margin: 0px;
+    /* identical to box height, or 200% */
+    
+    color: #FFFFFF;
+    
+    }
+
+
+  .hero_text {  
+    width: 390px;  
+    padding-top: 20px;  
+    font-family: Inter, 'Franklin Gothic Medium', 'Arial Narrow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+  /* or 200% */
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    }
+
+    .section_Skills {
+        height: 729px;
+        left: 0px;
+        top: 0px;
+    }
+
+
+    h2#Skills.section-title {
+        max-width: 364px;
+        margin-top: 0px;
+    
+      }
+
+      .text-header {
+
+        font-family: Merriweather, 'Franklin Gothic Medium', 'Arial Narrow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        /* /* identical to box height, or 200% * */
+        color: #BDAE82;
+        margin:0px;
+    
+      }
+    
+      .span_skill{
+        width: 131px;
+        height:50px;
+        background-color: #000000;
+        border-radius: 0px;
+        
+      }
+    
+          .line{
+          height: 2px;
+          width:116px;
+          left: 0;
+          right: 0;
+          margin-top: auto;
+          margin-bottom: auto;
+          background: #BDAE82;
+          border-radius: 0px;
+          }
+
+
+
+}
