@@ -27,7 +27,20 @@ body {
     margin:0 auto;
     background: #000000; 
     overflow-x: hidden;
+    top: 0 !important;
     /* border: 1px solid #ffff; */
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.skiptranslate {
+  display: none !important;
+  height: 0 !important;
+}
+.language__img {
+  cursor: pointer;
 }
 
 
@@ -51,7 +64,11 @@ body {
     max-width: 100%;
     align-items: center;
     margin-top: 5px;
-    margin-left: 840px;
+    margin-left: auto;
+    padding-right: 21px;
+    padding-left: 45%;
+  
+    
 }
 
 .header_nav{
@@ -119,11 +136,105 @@ body {
     transition: 3s;
   }
 
+ 
   .header_link:focus {
-    color: #BDAE82;
-    text-decoration: underline;
+    color:black;
+    background-color: #BDAE82;
+    transition: 3s;
+    outline: 0;
+  }
+  
+  .header_link:before, .header_link:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  .header_link:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, transparent 20%, #BDAE82 20%, transparent 30%), radial-gradient(circle, #3a21c9 20%, transparent 20%), radial-gradient(circle, #3a21c9, transparent 20%), radial-gradient(circle, transparent 10%, #BDAE82 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  .header_link:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3a21c9 15%, transparent 20%), radial-gradient(circle,#3a21c9 20%, transparent 20%), radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+
+
+.header_link:hover {
+    background: #BDAE82;
+    color: #726e6e;
     transition: 3s;
   }
+
+
+.header_link:active {
+    color: black;
+    text-decoration: underline;
+    transition: 3s;
+    transform: scale(0.9);
+    background-color: #BDAE82;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.header_link.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.header_link.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header_logo_link {
     position: absolute;
@@ -176,6 +287,16 @@ body {
   color: #BDAE82;
 }
 
+
+.tema {
+  width: 45px;
+  height: 45px;
+  margin-left: 21px;
+  margin-right: 21px;
+  padding-left: 10px;
+  background-image: url('./assets/svg/carbon_sun.svg');
+  background-repeat: no-repeat;   
+}
 
 
   .container {
@@ -455,7 +576,42 @@ color: #FFFFFF;
   text-align: center;
 
   color: #BDAE82;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(195, 193, 59, 0.5);
   
+  }
+  .portfolio-button:focus {
+    color:black;
+    background-color: #BDAE82;
+    transition: 3s;
+    outline: 0;
+  }
+  
+  .portfolio-button:before, .portfolio-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, transparent 20%, #BDAE82 20%, transparent 30%), radial-gradient(circle, #3a21c9 20%, transparent 20%), radial-gradient(circle, #3a21c9, transparent 20%), radial-gradient(circle, transparent 10%, #BDAE82 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  .portfolio-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3a21c9 15%, transparent 20%), radial-gradient(circle,#3a21c9 20%, transparent 20%), radial-gradient(circle, #BDAE82 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
   }
 
 
@@ -464,17 +620,52 @@ color: #FFFFFF;
     color: #726e6e;
     transition: 3s;
   }
+
+
 .portfolio-button:active {
-    color: red;
+    color: black;
     text-decoration: underline;
     transition: 3s;
+    transform: scale(0.9);
+    background-color: #BDAE82;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 
-.portfolio-button:focus {
-  color:black;
-  background-color: #BDAE82;
-  transition: 3s;
+.portfolio-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
 }
+.portfolio-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
 
 
 .portfolio-items-size{
@@ -580,6 +771,7 @@ color: #FFFFFF;
   left: 635px;
   top: 288px;
   cursor:pointer;
+  
 }
  
 
@@ -912,8 +1104,116 @@ display: none;
   display: none;
 }
 
+/* Светлая тема */
+.light-theme {
+  color: #0000;
+  background-color: #ffff;
+}
+
+.light-theme .theme-button {
+  background-image: url('./assets/svg/Vector.svg');
+  background-repeat: no-repeat;   
+}
+
+.light-theme .text-header {
+  color: #000000;  
+}
 
 
+.light-theme .span_skill {
+  background-color: #ffff;
+}
+
+.light-theme .line {
+  background: #000000;
+}
+
+
+.light-theme .line {
+  background: #000000;
+}
+
+.light-theme .skills-title {
+  color: #000000;
+}
+
+.light-theme .skilst-text {
+  color: #000000;
+}
+
+.light-theme .span_portfolio {
+  background: #ffffff;
+}
+
+.light-theme .line_portfolio {
+  background-color: #000000;
+}
+
+.light-theme .text-header-portfolio {
+  color: #000000;
+}
+
+.light-theme .portfolio-button{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-theme .portfolio-button:focus{
+  background-color: #BDAE82;
+  color: #ffffff;
+}
+
+
+.light-theme .text-header-video{
+  color: #000000;
+}
+
+.light-theme .span_video{
+  background-color: #ffffff;
+}
+
+.light-theme .line_video{
+  background: #000000;
+}
+
+.light-theme .text-header-price{
+  color: #000000;
+}
+
+.light-theme .line_price {
+  background: #000000;
+}
+
+.light-theme .span_price {
+  background: #FFFFFF;
+}
+
+.light-theme .price-header {
+  color: #000000;
+}
+
+.light-theme .price-p {
+  color: #000000;
+}
+
+
+.light-theme .footer {
+  background-color: #000000;
+}
+
+
+.light-theme .popup {
+  background-color: #ffffff;
+}
+
+.light-theme .menu .header_link {
+  color: #000000;
+}
+
+
+.light-theme .bar {
+  background-color: #000000;
+}
 
 
 @media only screen and (max-width: 768px) {
