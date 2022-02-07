@@ -1,1 +1,1 @@
-https://lirikirilik.github.io/rsschool-cv/VideoPlayer
+https://lirikirilik.github.io/rsschool-cv/gh-pages/VideoPlayer
