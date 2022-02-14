@@ -1,1 +1,1 @@
-https://lirikirilik.github.io/rsschool-cv/gh-pages/VideoPlayer
+https://lirikirilik.github.io/rsschool-cv/gh-pages/api-unsplash
