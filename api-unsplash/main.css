@@ -1,0 +1,242 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+
+  }
+  
+ main {
+     margin-bottom: 5px;
+ }
+
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    text-align: center;
+  }
+  
+  .h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  
+  .search-input {
+    max-width: 800px;
+    width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  
+  .btn {
+    width: 80px;
+    height: 40px;
+    color: #000000;
+    background: #BDAE82;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  button {
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  button:hover {
+    background: rgb(211, 203, 86);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .result-stats {
+    color: white;
+    padding-top: 15px;
+    font-size: 1.5em;
+  }
+  
+  .search-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 25px;
+    color: #FFFFFF;
+    border:  2px #BDAE82;
+  }
+  
+  .result-item {
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    max-height: 400px;
+    padding: 5px;
+    border-radius: 4px;
+    border:4px double #BDAE82;
+    box-shadow:0 0 30px #BDAE82;
+  }
+  
+  .photographer-name {
+    padding: 7px;
+    font-size: 1.2em;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+  }
+  
+  .photographer-name:hover {
+    text-decoration: underline;
+    color: #BDAE82;
+  }
+  
+  .prev-btn, .next-btn {
+    margin-bottom: 20px;
+    background: #BDAE82;
+    width: 200px;
+    height: 30px;
+    color: black;
+    border: none;
+  }
+  
+  .next-btn {
+    margin-left: 10px;
+    color: black;
+
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 1.7em;
+    position: relative;
+    background: #000000;
+    padding: 10px;
+    margin-top: 20px;
+    width:100%;
+  }
+  
+  .github-link {
+    color: #ffff;
+    text-shadow: #333;
+    text-decoration: none;
+    padding-left: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #BDAE82;
+    cursor: pointer;
+  }
+  
+  .line{
+    height: 6px;
+    width: 100%;
+    background: #BDAE82;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border: double;
+  }
+
+
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+
+  .headerTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .headText{
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  .logo {
+      position: absolute;
+      background-image:url(./assets/svg/icons8-unsplash.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      margin: 0%;
+      padding: auto;
+      top: 20px;
+      margin-left: 14%;
+  }
+
+  .myform{
+      padding-top: 40px;
+  }
+
+
+  .pagination {
+      margin-top: 30px;
+  }
