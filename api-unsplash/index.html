@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Unsplash Photo Search App</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+   
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+         <div class="hederTitle">
+            <div class="logo"></div>
+            <div class="headText">Unsplash Photo Search for RSSchool:</div>
+        </div>
+        <form class="js-form myform" id="my_form">
+          <input type="search" class="search-input js-search-input" placeholder="Найди самые лучшие фото на Unsplash (p.s. поиск только на ангийском языке)" autofocus autocomplete="off" title="Введите слова на анг. языке" id="first" value="supercar">
+          <button type="submit" class="btn" id="firstpage">Поиск</button>
+        </form>
+    
+
+
+        <div class="result-stats js-result-stats"></div>
+        <div class="pagination">
+          <button class="hidden prev-btn js-prev"><a href="#top" style="text-decoration: none; color: white;">Предыдущая страница</a></button>
+          <button class="hidden next-btn js-next"><a href="#top" style="text-decoration: none; color: white;">Следующая страница</a></button>
+        </div>
+      </div>
+
+      <div class="spinner js-spinner hidden">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+
+        <div class="search-results js-search-results"></div>
+        <footer class="footer">
+          <div class= "line"></div>
+          <a class="github-link" href="https://github.com/lirikirilik" target="_blank">
+              ©  2022  My github : @lirikirilik
+          </a>
+          <a class="github-link" href="https://rs.school/js-stage0/ " target="_blank">
+              Rolling Scopes School
+          </a>
+      </footer>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
