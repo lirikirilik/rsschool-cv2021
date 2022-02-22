@@ -46,7 +46,7 @@ function cellClick() {
 
     if(checkWin(data)) {
         stat[player] += 1;
-        restart("Выграл: " + player);
+        restart("Выграл на 9 ходу игрок: " + player);
     }else {
         var draw = true;
         for(var i in cell) {
