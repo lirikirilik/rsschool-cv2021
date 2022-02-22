@@ -44,7 +44,7 @@
 }
 
 .cell:hover {
-    background-color: #cfdf79;
+    background-color: #BDAE82;
 }
 
 .currentPlayer {
@@ -116,3 +116,5 @@
       text-align: center;
       font-size: 15px;
   }
+
+  
