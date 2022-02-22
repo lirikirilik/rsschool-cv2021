@@ -1,0 +1,120 @@
+* {margin: 0; padding: 0;}
+
+.pop {
+    background-color: #000000;
+}
+
+.head {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.content {
+    display: flex;
+    margin: 50px 50px 50px 50px;
+    font-family: sans-serif;
+}
+
+#area {
+    width: 306px;
+    margin: 0 auto;
+    font-size: 0;
+    border:4px double #BDAE82;
+    box-shadow:0 0 30px #BDAE82;
+}
+
+.title {
+    color: #BDAE82;
+    text-shadow:0 0 30px #BDAE82;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 80px;
+    color: aliceblue;
+    border: 1px solid #BDAE82;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.cell:hover {
+    background-color: #BDAE82;
+}
+
+.currentPlayer {
+    width: 300px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    color: #BDAE82;
+    text-shadow:0 0 30px #BDAE82;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color:#BDAE82
+}
+
+.stat table {
+    border-collapse: collapse;
+}
+
+.stat table, .stat th, .stat td {
+    padding: 5px;
+    text-align: center;
+    border:4px double #BDAE82;
+    box-shadow:0 0 30px #BDAE82;
+}
+
+
+ 
+.footer {
+    text-align: center;
+    font-size: 1.7em;
+    position: relative;
+    background: #000000;
+    padding: 10px;
+    margin-top: 20px;
+    width:100%;
+  }
+  
+  .github-link {
+    color: #ffff;
+    text-shadow: #333;
+    text-decoration: none;
+    padding-left: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #BDAE82;
+    cursor: pointer;
+  }
+  
+  .line{
+    height: 6px;
+    width: 100%;
+    background: #BDAE82;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border: double;
+  }
+
+  .rule {
+      color: #BDAE82;
+      text-align: center;
+      font-size: 15px;
+  }
+
+  

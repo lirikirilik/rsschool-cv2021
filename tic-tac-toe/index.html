@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSSchool Tik tak toe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="pop">
+    <div class="head">
+        <h1 class="title">Игра Tic-Tac-Toe или "Крестики-Нолики"</h1>
+    </div>
+
+    <div class="content">
+        <div class="currentPlayer">
+            <span>Сейчас ходит игрок: <span id="curPlyr">X</span></span>
+        </div>
+
+        <div id="area"></div>
+
+        <div class="stat">
+            <table>
+                <th colspan="2">Статистика</th>
+                <tr>
+                    <td>Игрок № 1: X</td>
+                    <td><span id="sX">0</span></td>
+                </tr>
+                <tr>
+                    <td>Игрок № 2: O</td>
+                    <td><span id="sO">0</span></td>
+                </tr>
+                <tr>
+                    <td>Ничьи</td>
+                    <td><span id="sD">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <h2 class="rule">Правила: Игра tic-tac-toe или "крестики-нолики" ведётся на квадратном поле 3 на 3 клетки (размер игрового поля может быть другим). При кликах по клеткам игрового поля первый ход всегда ставит крестик, следующий нолик и так по очереди. Цель игры - выстроить ряд из трёх одинаковых фигур по вертикали, горизонтали или диагонали. </h2>
+    </div>
+    <footer class="footer">
+        <div class= "line"></div>
+        <a class="github-link" href="https://github.com/lirikirilik" target="_blank">
+            ©  2022  My github : @lirikirilik
+        </a>
+        <a class="github-link logo" href="https://rs.school/js-stage0/ " target="_blank">
+            <img src="./img/logo.png" alt="RSSChool JS">
+        </a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
